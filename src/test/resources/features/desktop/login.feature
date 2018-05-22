@@ -4,7 +4,6 @@ Feature: Java-Cucumber Integration
   Scenario: Login Normal Scenario
     Given Valid user credential
     When User do login
-    Then User see homepage
 
   @Web
   Scenario: Login Scenario

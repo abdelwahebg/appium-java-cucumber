@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 @CucumberOptions(
         strict = true,
         monochrome = true,
-        tags = "@PWA",
+        tags = "@Web",
         features = "src/test/resources/features",
         plugin = {
                 "pretty",
@@ -29,7 +29,7 @@ public class CucumberTestRunner extends TestInstrument {
     }
 
     @After
-    public void afterScenario(){
+    public void afterScenario() {
         if (driver != null) {
             driver.resetApp();
         }
