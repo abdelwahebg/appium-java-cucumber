@@ -1,7 +1,6 @@
 package bukalapak;
 
 import bukalapak.utility.EmulateDevice;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.AutomationName;

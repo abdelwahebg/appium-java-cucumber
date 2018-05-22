@@ -1,4 +1,4 @@
-package bukalapak.cucumber.steps;
+package bukalapak.cucumber.step_definitions;
 
 import bukalapak.cucumber.CucumberTestRunner;
 import bukalapak.cucumber.domain.User;

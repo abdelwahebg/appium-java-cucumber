@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 @CucumberOptions(
         strict = true,
         monochrome = true,
-        tags = "@Android",
+        tags = "@PWA",
         features = "src/test/resources/features",
         plugin = {
                 "pretty",
