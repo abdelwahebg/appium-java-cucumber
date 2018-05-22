@@ -97,7 +97,7 @@ if [[ " ${PLATFORM_OPTION[*]} " == *" ${option} "* ]]; then
             echo "Please wait ..."
 
             # Change Desired Test
-            sed -i '' s/TEMPORARY_TAGS/@${tag}/g src/test/java/bukalapak/cucumber/CucumberTestRunner.java
+            sed -i '' s/TEMPORARY_TAGS/${tag}/g src/test/java/bukalapak/cucumber/CucumberTestRunner.java
             sed -i '' s/TEMPORARY_FEATURES/src\\/test\\/resources\\/features/g src/test/java/bukalapak/cucumber/CucumberTestRunner.java
 
             # Run Test
