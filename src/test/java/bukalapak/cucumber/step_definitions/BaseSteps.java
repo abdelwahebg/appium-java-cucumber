@@ -1,5 +1,6 @@
-package bukalapak.cucumber.steps;
+package bukalapak.cucumber.step_definitions;
 
+import bukalapak.TestInstrument;
 import bukalapak.cucumber.CucumberTestRunner;
 import bukalapak.cucumber.domain.User;
 import bukalapak.utility.Credentials;
@@ -15,7 +16,7 @@ import java.util.Map;
  * Created by Aldo Christian on 21/05/18.
  */
 
-public class BaseSteps extends CucumberTestRunner {
+public class BaseSteps extends TestInstrument {
 
     private User user;
 
@@ -39,7 +40,7 @@ public class BaseSteps extends CucumberTestRunner {
     @When("User do login")
     public void user_do_login() {
         switch (moduleType) {
-            case "DESKTOP":
+            case "WEB":
                 bukalapak.homeDesktopPage().goToUrl("https://www.bukalapak.com");
                 bukalapak.homeDesktopPage().tapOnLoginButton();
                 bukalapak.homeDesktopPage().login(user.getUsername(), user.getPassword());

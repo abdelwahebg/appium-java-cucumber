@@ -2,6 +2,7 @@ package bukalapak.cucumber;
 
 import bukalapak.TestInstrument;
 import cucumber.api.CucumberOptions;
+import cucumber.api.java.After;
 import cucumber.api.testng.TestNGCucumberRunner;
 import org.testng.annotations.Test;
 
@@ -12,8 +13,8 @@ import org.testng.annotations.Test;
 @CucumberOptions(
         strict = true,
         monochrome = true,
-        tags = "@Android",
-        features = "src/test/resources/features",
+        tags = "TEMPORARY_TAGS",
+        features = "TEMPORARY_FEATURES",
         plugin = {
                 "pretty",
                 "json:target/cucumber-json-report.json"
@@ -27,4 +28,14 @@ public class CucumberTestRunner extends TestInstrument {
         new TestNGCucumberRunner(getClass()).runCukes();
     }
 
+    @After
+    public void afterScenario() {
+        if (driver != null) {
+            driver.resetApp();
+        }
+
+        if (webDriver != null) {
+            webDriver.manage().deleteAllCookies();
+        }
+    }
 }

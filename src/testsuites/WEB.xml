@@ -3,7 +3,7 @@
     <parameter name="deviceName" value="API23"/>
     <parameter name="platformVersion" value="6.0"/>
     <parameter name="port" value="4724"/>
-    <parameter name="module" value="DESKTOP"/>
+    <parameter name="module" value="WEB"/>
     <parameter name="browser" value="FIREFOX"/>
     <parameter name="emulation" value="Nexus 5"/>
 

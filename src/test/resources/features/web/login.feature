@@ -1,10 +1,9 @@
-Feature: Java-Cucumber Integration
+Feature: Multiple Scenario
 
   @Web
   Scenario: Login Normal Scenario
     Given Valid user credential
     When User do login
-    Then User see homepage
 
   @Web
   Scenario: Login Scenario

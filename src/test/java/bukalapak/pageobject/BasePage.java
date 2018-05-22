@@ -680,16 +680,6 @@ public class BasePage {
         findElementWithIdWithTimeout(id, timeout).click();
     }
 
-    public void longTapOnElement(AndroidElement element) {
-        TouchAction action = new TouchAction(androidDriver);
-        action.longPress(element).release().perform();
-    }
-
-    public void tapUsingLocation(Point location, Duration time) {
-        TouchAction touchAction = new TouchAction(androidDriver);
-        touchAction.press(location.x, location.y).waitAction(time).release().perform();
-    }
-
     //endregion
 
     //region Global Type Function
