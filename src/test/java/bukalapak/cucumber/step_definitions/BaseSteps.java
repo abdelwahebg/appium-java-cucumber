@@ -1,5 +1,6 @@
 package bukalapak.cucumber.step_definitions;
 
+import bukalapak.TestInstrument;
 import bukalapak.cucumber.CucumberTestRunner;
 import bukalapak.cucumber.domain.User;
 import bukalapak.utility.Credentials;
@@ -15,7 +16,7 @@ import java.util.Map;
  * Created by Aldo Christian on 21/05/18.
  */
 
-public class BaseSteps extends CucumberTestRunner {
+public class BaseSteps extends TestInstrument {
 
     private User user;
 

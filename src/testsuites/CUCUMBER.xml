@@ -5,8 +5,8 @@
     <parameter name="platformVersion" value="5.1.1"/>
     <parameter name="port" value="4724"/>
     <parameter name="module" value="PWA"/>
-    <parameter name="browser" value="OPERA"/>
-    <parameter name="emulation" value="Iphone 6/7/8"/>
+    <parameter name="browser" value="CHROME"/>
+    <parameter name="emulation" value="Iphone X"/>
 
     <listeners>
         <listener class-name="bukalapak.utility.TestNGExecutionListener"></listener>

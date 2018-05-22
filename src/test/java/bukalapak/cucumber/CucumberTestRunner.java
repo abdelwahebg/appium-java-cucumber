@@ -2,6 +2,7 @@ package bukalapak.cucumber;
 
 import bukalapak.TestInstrument;
 import cucumber.api.CucumberOptions;
+import cucumber.api.java.After;
 import cucumber.api.testng.TestNGCucumberRunner;
 import org.testng.annotations.Test;
 
@@ -27,4 +28,14 @@ public class CucumberTestRunner extends TestInstrument {
         new TestNGCucumberRunner(getClass()).runCukes();
     }
 
+    @After
+    public void afterScenario(){
+        if (driver != null) {
+            driver.resetApp();
+        }
+
+        if (webDriver != null) {
+            webDriver.manage().deleteAllCookies();
+        }
+    }
 }
