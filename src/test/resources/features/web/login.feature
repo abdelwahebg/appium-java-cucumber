@@ -1,4 +1,4 @@
-Feature: Java-Cucumber Integration
+Feature: Multiple Scenario
 
   @Web
   Scenario: Login Normal Scenario

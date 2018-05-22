@@ -85,7 +85,7 @@ public class TestInstrument {
                     webDriver = new FirefoxDriver(firefoxOptions);
                     break;
                 case "OPERA":
-                    // TODO: Not stable yet for desktop version, screen blocked by notification prompt
+                    // TODO: Not stable yet for web version, screen blocked by notification prompt
                     capabilities.setCapability(CapabilityType.BROWSER_NAME, BrowserType.OPERA_BLINK);
                     OperaOptions operaOptions = new OperaOptions();
                     webDriver = new OperaDriver(operaOptions);
@@ -101,7 +101,7 @@ public class TestInstrument {
                     break;
             }
 
-            if (module.equals("DESKTOP"))
+            if (module.equals("WEB"))
                 webDriver.manage().window().maximize();
             else
                 webDriver.manage().window().setSize(EmulateDevice.emulateDevice(emulation));

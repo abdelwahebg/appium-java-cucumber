@@ -40,7 +40,7 @@ public class BaseSteps extends TestInstrument {
     @When("User do login")
     public void user_do_login() {
         switch (moduleType) {
-            case "DESKTOP":
+            case "WEB":
                 bukalapak.homeDesktopPage().goToUrl("https://www.bukalapak.com");
                 bukalapak.homeDesktopPage().tapOnLoginButton();
                 bukalapak.homeDesktopPage().login(user.getUsername(), user.getPassword());

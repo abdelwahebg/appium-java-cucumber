@@ -1,4 +1,4 @@
-Feature: Test Scenario
+Feature: Multiple Scenario
 
   @Android
   Scenario: Login

@@ -13,8 +13,8 @@ import org.testng.annotations.Test;
 @CucumberOptions(
         strict = true,
         monochrome = true,
-        tags = "@@Android",
-        features = "src/test/resources/features",
+        tags = "TEMPORARY_TAGS",
+        features = "TEMPORARY_FEATURES",
         plugin = {
                 "pretty",
                 "json:target/cucumber-json-report.json"
