@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login Test" verbose="1">
+    <parameter name="deviceName" value="API22"/>
+    <parameter name="platformVersion" value="5.1.1"/>
+    <parameter name="port" value="4724"/>
+    <parameter name="module" value="APP"/>
+    <parameter name="browser" value="CHROME"/>
+    <parameter name="emulation" value="Nexus 5"/>
+
+    <test name="Run Login Test">
+        <classes>
+            <class name="bukalapak.testcases.AndroidTest"/>
+        </classes>
+    </test>
+</suite>
