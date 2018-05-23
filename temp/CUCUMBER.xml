@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestNG Cucumber Suite">
-    <parameter name="deviceName" value="API22"/>
-    <parameter name="platformVersion" value="5.1.1"/>
+    <parameter name="deviceName" value="TEMPORARY_DEVICE"/>
+    <parameter name="platformVersion" value="TEMPORARY_PLATFORM"/>
     <parameter name="port" value="4724"/>
     <parameter name="module" value="TEMPORARY_MODULE"/>
-    <parameter name="browser" value="FIREFOX"/>
-    <parameter name="emulation" value="Iphone X"/>
+    <parameter name="browser" value="TEMPORARY_BROWSER"/>
+    <parameter name="emulation" value="TEMPORARY_EMULATION"/>
 
     <listeners>
         <listener class-name="bukalapak.utility.TestNGExecutionListener"></listener>
